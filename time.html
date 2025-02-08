@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My GitHub Pages Site</title>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const formattedTime = now.toLocaleString(); // 根据用户时区格式化时间
+            document.getElementById("clock").innerText = "Current Time: " + formattedTime;
+        }
+
+        setInterval(updateTime, 1000); // 每秒更新一次时间
+    </script>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>I'm hosted with GitHub Pages.</p>
+
+    <h2>Welcome to my homepage</h2>
+    <p id="clock">Loading time...</p> <!-- 实时时间显示位置 -->
+
+    <h2>Visit My Site</h2>
+    <a href="https://bxom-github-io.pages.dev" target="_blank">https://bxom-github-io.pages.dev</a>
+
+    <script>
+        updateTime(); // 初始调用，防止页面加载时有延迟
+    </script>
+</body>
+</html>
